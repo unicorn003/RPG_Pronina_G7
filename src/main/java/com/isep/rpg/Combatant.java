@@ -27,14 +27,27 @@ public abstract class Combatant {
         if(combatant.getHealthPoint() > this.getHealthPoint()){
             combatant.win();
             this.loose(combatant.getAttackPoint());
+            if (!this.isAlive()){
+                System.out.println(this.getName() + " is dead");
+            }
+
         }
         if (combatant.getHealthPoint() == this.getHealthPoint()) {
             combatant.loose(this.getAttackPoint());
             this.loose(combatant.getAttackPoint());
+            if (!combatant.isAlive()){
+                System.out.println(combatant.getName() + " is dead");
+            }
+            if (!this.isAlive()){
+                System.out.println(this.getName() + " is dead");
+            }
         }
         else{
             combatant.loose(this.getAttackPoint());
             this.win();
+            if (!combatant.isAlive()){
+                System.out.println(combatant.getName() + " is dead");
+            }
         }
     };
     public boolean isAlive(){
