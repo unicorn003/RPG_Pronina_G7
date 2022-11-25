@@ -23,9 +23,9 @@ public class Game {
         heros.add(conan);
 
         // Il faut normalement 5 ennemis de types différents...
-        enemies = new ArrayList<>();
+        /*enemies = new ArrayList<>();
         enemies.add( new Dragon("Dracofeu") );
-        enemies.add( new Dragon("Smaug") );
+        enemies.add( new Dragon("Smaug") );*/
     }
 
 
