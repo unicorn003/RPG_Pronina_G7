@@ -6,5 +6,4 @@ public class Dragon extends Enemy {
         // Le dragon possède 5 points de vie et inflige 3 points de dégats
         super(n, 10, 5);
     }
-
 }

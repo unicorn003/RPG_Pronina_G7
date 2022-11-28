@@ -9,7 +9,12 @@ public class Warrior extends Hero {
     public void take(Item item) {
         if (item instanceof Weapon) {
             weapon = (Weapon) item;
-        } else {
+            this.attackPoint += weapon.getDamagePoints();
+        } else if (item instanceof Food) {
+
+        }
+        else
+        {
             Game.displayMessage("Oups ! " + item.getName() + " est inutile...");
         }
     }

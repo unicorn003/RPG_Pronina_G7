@@ -59,7 +59,7 @@ public abstract class Combatant {
         healthPoint += 1;
     }
     private String name;
-    private int healthPoint;
-    private int attackPoint;
+    protected int healthPoint;
+    protected int attackPoint;
 
 }
