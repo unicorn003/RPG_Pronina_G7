@@ -6,5 +6,8 @@ public abstract class Consumable extends Item {
         this.effect = effect;
     }
     private int effect;
+    public int getEffect(){
+        return effect;
+    }
 }
 

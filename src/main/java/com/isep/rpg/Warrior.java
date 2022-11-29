@@ -11,7 +11,8 @@ public class Warrior extends Hero {
             weapon = (Weapon) item;
             this.attackPoint += weapon.getDamagePoints();
         } else if (item instanceof Food) {
-
+            Food food = (Food) item;
+            this.healthPoint += food.getEffect();
         }
         else
         {
