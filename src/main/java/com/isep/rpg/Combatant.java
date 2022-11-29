@@ -7,6 +7,9 @@ public abstract class Combatant {
         healthPoint = h;
         attackPoint = a;
     }
+    public void eat(Food food){
+        this.healthPoint += food.getEffect();
+    }
 
     public String getName() {
         return name;

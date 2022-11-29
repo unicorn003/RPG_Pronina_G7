@@ -10,11 +10,7 @@ public class Hunter extends Hero{
         if (item instanceof Weapon) {
             weapon = (Weapon) item;
             this.attackPoint += weapon.getDamagePoints();
-        } else if (item instanceof Food) {
-            Food food = (Food) item;
-            this.healthPoint += food.getEffect();
-        }
-        else
+        } else
         {
             Game.displayMessage("Oups ! " + item.getName() + " est inutile...");
         }
