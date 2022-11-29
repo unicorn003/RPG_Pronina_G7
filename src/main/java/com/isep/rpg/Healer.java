@@ -15,4 +15,7 @@ public class Healer extends SpellCaster{
             Game.displayMessage("Oups ! " + item.getName() + " est inutile...");
         }
     }
+    public void heal(Combatant combatant){
+        combatant.healthPoint += potion.getEffect();
+    }
 }
