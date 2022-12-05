@@ -21,11 +21,26 @@ public class Game {
         Hero conan = new Warrior("Conan");
         conan.take( new Weapon("sword", 2) );
         heros.add(conan);
+        //
+        Hero max = new Mage("Max");
+        max.take(new Potion( "frog eyes", 3));
+        heros.add(max);
+        //
+        Hero greg = new Healer("Greg");
+        greg.take(new Potion("Mountain water", 2));
+        heros.add(greg);
+        //
+        Hero mike = new Hunter("Mike");
+        mike.take(new Weapon("Axe", 4));
+        heros.add(mike);
+
 
         // Il faut normalement 5 ennemis de types différents...
-        /*enemies = new ArrayList<>();
+        enemies = new ArrayList<>();
         enemies.add( new Dragon("Dracofeu") );
-        enemies.add( new Dragon("Smaug") );*/
+        enemies.add( new Dragon("Smaug") );
+        enemies.add(new Dragon("Ukrainian iron ore"));
+        enemies.add(new Dragon("Polish talking"));
     }
 
 
