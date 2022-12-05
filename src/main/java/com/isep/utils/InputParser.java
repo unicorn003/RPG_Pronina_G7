@@ -9,6 +9,8 @@ public interface InputParser {
     public void sayWelocome();
     public void startGame();
     public void showHeros(List<Combatant> heros);
+    public void showEnemies(List<Combatant> enemies);
+    public void askForFight();
 
 
 }

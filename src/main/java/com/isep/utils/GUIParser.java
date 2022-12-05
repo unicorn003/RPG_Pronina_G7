@@ -24,4 +24,10 @@ public class GUIParser implements InputParser{
     public void showHeros(List<Combatant> heros) {
 
     }
+    public void showEnemies(List<Combatant> enemies){
+
+    }
+    public void askForFight(){
+
+    }
 }
