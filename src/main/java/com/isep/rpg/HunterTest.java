@@ -13,8 +13,9 @@ class HunterTest {
         claire.fight(tors);
         assertEquals(claire.getHealthPoint(), 16);
     }
+    @Test
     void takeTest(){
         claire.eat(potato);
-        assertEquals(claire.getHealthPoint(), 19);
+        assertEquals(claire.getHealthPoint(), 18);
     }
 }
