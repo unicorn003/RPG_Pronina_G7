@@ -1,5 +1,8 @@
 package com.example.rpg_pronina_g7;
 
+import com.isep.rpg.Game;
+import com.isep.utils.ConsoleParser;
+import com.isep.utils.InputParser;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -19,5 +22,7 @@ public class HelloApplication extends Application {
 
     public static void main(String[] args) {
         launch();
+        InputParser inputParser = new ConsoleParser();
+        Game game = new Game(inputParser);
     }
 }
