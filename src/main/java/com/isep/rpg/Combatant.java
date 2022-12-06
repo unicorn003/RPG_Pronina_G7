@@ -52,16 +52,15 @@ public abstract class Combatant {
                 System.out.println(combatant.getName() + " is dead");
             }
         }
-    };
+    }
+
     public boolean isAlive(){
-        if (getHealthPoint() > 0)
-            return true;
-        else return false;
+        return getHealthPoint() > 0;
     }
     public void win(){
         healthPoint += 1;
     }
-    private String name;
+    private final String name;
     protected int healthPoint;
     protected int attackPoint;
 

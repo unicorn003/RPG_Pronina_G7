@@ -5,12 +5,12 @@ import com.isep.rpg.Combatant;
 import java.util.List;
 
 public interface InputParser {
-    public void askName();
-    public void sayWelocome();
-    public void startGame();
-    public void showHeros(List<Combatant> heros);
-    public void showEnemies(List<Combatant> enemies);
-    public void askForFight();
+    void askName();
+    void sayWelocome();
+    void startGame();
+    void showHeros(List<Combatant> heros);
+    void showEnemies(List<Combatant> enemies);
+    void askForFight();
 
 
 }

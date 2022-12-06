@@ -10,5 +10,5 @@ public abstract class Item {
         return name;
     }
 
-    private String name;
+    private final String name;
 }

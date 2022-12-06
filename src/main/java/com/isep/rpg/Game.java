@@ -95,10 +95,10 @@ public class Game {
     }
 
 
-    private InputParser inputParser;
+    private final InputParser inputParser;
 
-    private List<Combatant> heros;
-    private List<Combatant> enemies;
+    private final List<Combatant> heros;
+    private final List<Combatant> enemies;
 
 
     // Méthodes d'affichage
