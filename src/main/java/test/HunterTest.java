@@ -1,5 +1,9 @@
-package com.isep.rpg;
+package test;
 
+import com.isep.rpg.Combatant;
+import com.isep.rpg.Dragon;
+import com.isep.rpg.Food;
+import com.isep.rpg.Hunter;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
