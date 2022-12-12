@@ -45,14 +45,6 @@ public class ConsoleParser implements InputParser{
     @Override
     public void win() {
 
-        System.out.println("       *");
-        System.out.println("      ***");
-        System.out.println("     *****");
-        System.out.println("***************");
-        System.out.println(" *************");
-        System.out.println("   *********");
-        System.out.println("    *** ***");
-        System.out.println("     *   *");
 
     }
 

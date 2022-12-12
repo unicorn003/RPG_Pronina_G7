@@ -10,6 +10,16 @@ public class Achievement {
         achievementDescription = d;
         isAchieved = i;
     }
-
-
+    public String getAchievementDescription() {
+        return achievementDescription;
+    }
+    public String getAchievementName() {
+        return achievementName;
+    }
+    public boolean isAchieved() {
+        return isAchieved;
+    }
+    public void setAchieved(boolean achieved) {
+        isAchieved = achieved;
+    }
 }
