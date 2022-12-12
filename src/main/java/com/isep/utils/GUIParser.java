@@ -6,12 +6,13 @@ import java.util.List;
 
 public class GUIParser implements InputParser{
     @Override
-    public void askName() {
-
+    public String askName() {
+        String name = "Voila";
+        return name;
     }
 
     @Override
-    public void sayWelocome() {
+    public void sayWelcome() {
 
     }
 
