@@ -28,7 +28,17 @@ public class GUIParser implements InputParser{
     public void showEnemies(List<Combatant> enemies){
 
     }
-    public void askForFight(){
+    public int askNumber(){
+        return 1;
+    }
+
+    @Override
+    public void win() {
+
+    }
+
+    @Override
+    public void loose() {
 
     }
 }

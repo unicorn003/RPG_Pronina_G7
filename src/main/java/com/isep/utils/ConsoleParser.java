@@ -38,18 +38,18 @@ public class ConsoleParser implements InputParser{
         }
         System.out.println("#########################");
     }
-    public void askForFight(){
 
+    public int askNumber(){
+        return 0;
     }
 
     @Override
     public void win() {
-
-
+        System.out.println("Congratulations. You have won this game. Chose your hero to take an achievement");
     }
 
     @Override
     public void loose() {
-
+        System.out.println("The game is over, you lost it.");
     }
 }

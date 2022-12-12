@@ -10,7 +10,7 @@ public interface InputParser {
     void startGame();
     void showHeros(List<Combatant> heros);
     void showEnemies(List<Combatant> enemies);
-    void askForFight();
+    int askNumber();
     void win();
     void loose();
 
