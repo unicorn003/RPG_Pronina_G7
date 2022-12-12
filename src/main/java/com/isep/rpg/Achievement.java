@@ -1,6 +1,6 @@
 package com.isep.rpg;
 
-public abstract class Achievement {
+public class Achievement {
     private String achievementName;
     private String achievementDescription;
     private boolean isAchieved;
@@ -22,5 +22,4 @@ public abstract class Achievement {
     public void setAchieved(boolean achieved) {
         isAchieved = achieved;
     }
-    public abstract int returnAchievement();
 }
