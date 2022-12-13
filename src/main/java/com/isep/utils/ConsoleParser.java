@@ -48,6 +48,9 @@ public class ConsoleParser implements InputParser{
         System.out.println("Congratulations. You have won this game. Chose your hero to take an achievement");
     }
 
+    public void getRewards(){
+
+    }
     @Override
     public void loose() {
         System.out.println("The game is over, you lost it.");

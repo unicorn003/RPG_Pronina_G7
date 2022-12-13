@@ -36,7 +36,9 @@ public class GUIParser implements InputParser{
     public void win() {
 
     }
+    public void getRewards(){
 
+    }
     @Override
     public void loose() {
 

@@ -81,7 +81,7 @@ public class Game {
 
             // Tests de fin du jeu
             if (heros.size() == 0) {
-                displayMessage("Les héros ont perdu, c'est la fin du monde...");
+                inputParser.loose();
                 break;
             }
             if (enemies.size() == 0) {

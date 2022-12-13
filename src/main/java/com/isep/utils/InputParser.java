@@ -13,6 +13,6 @@ public interface InputParser {
     int askNumber();
     void win();
     void loose();
-
+    void getRewards();
 
 }
