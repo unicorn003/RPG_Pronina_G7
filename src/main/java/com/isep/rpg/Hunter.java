@@ -12,7 +12,7 @@ public class Hunter extends Hero{
             this.attackPoint += weapon.getDamagePoints();
         } else
         {
-            Game.displayMessage("Oups ! " + item.getName() + " est inutile...");
+            Game.displayMessage("Oups ! " + item.getName() + " it's not usable");
         }
     }
     private Weapon weapon;

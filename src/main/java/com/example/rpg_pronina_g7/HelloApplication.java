@@ -24,5 +24,6 @@ public class HelloApplication extends Application {
         launch();
         InputParser inputParser = new ConsoleParser();
         Game game = new Game(inputParser);
+        game.start();
     }
 }

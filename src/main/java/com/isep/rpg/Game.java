@@ -45,38 +45,26 @@ public class Game {
 
 
     public void start() {
-
+        inputParser.sayWelcome();
+        this.displayStatus();
         int ixHero = 0;
 
-        // Boucle de jeu
+
         while (true) {
-
-            displayStatus(heros, enemies);
-
+            displayStatus();
             Combatant goodOne = heros.get(ixHero);
             Combatant badOne = enemies.get(0);
 
-            // Attaque de l'ennemi
-            displayMessage("Le méchant " + badOne.getName()
-                    + " attaque le gentil " + goodOne.getName() + "...");
+            displayMessage("Enemy  " + badOne.getName()
+                    + " attack " + goodOne.getName() + "...");
             badOne.fight(goodOne);
             if (goodOne.getHealthPoint() <= 0) {
-                displayMessage
-                        ("Le pauvre " + goodOne.getName() + " a été vaincu...");
                 heros.remove(ixHero);
-                ixHero--; // Correction: évite que le suivant perde son tour
+                ixHero--;
             } else {
-
-                // Riposte du gentil, s'il n'est pas vaincu
-                displayMessage("Le gentil " + goodOne.getName()
-                        + " attaque le méchant " + badOne.getName() + "...");
-                goodOne.fight(badOne);
                 if (badOne.getHealthPoint() <= 0) {
-                    displayMessage("Bravo, " + goodOne.getName()
-                            + " a vaincu " + badOne.getName() + " !!!");
                     enemies.remove(0);
                 }
-
             }
 
             // Tests de fin du jeu
@@ -86,10 +74,11 @@ public class Game {
             }
             if (enemies.size() == 0) {
                 inputParser.win();
+                for (Combatant c: heros){
+                    inputParser.getRewards(c);
+                }
                 break;
             }
-
-            // Au tour du héro suivant
             ixHero = (ixHero + 1) % heros.size();
         }
     }
@@ -103,7 +92,7 @@ public class Game {
 
 
 
-    public void displayStatus(List<Combatant> h, List<Combatant> e) {
+    public void displayStatus() {
         System.out.println("#########################");
         inputParser.showHeros(heros);
         inputParser.showEnemies(enemies);

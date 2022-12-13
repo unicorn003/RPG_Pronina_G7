@@ -2,7 +2,7 @@ package com.isep.rpg;
 
 public class WarriorAchivement extends Achievement{
 
-    public WarriorAchivement(String n, String d, boolean i) {
+    public WarriorAchivement(boolean i) {
         super("Stinger", "Given to your warrior, if you determine that it was he who won and give him a stinger", i);
     }
     private Weapon stinger = new Weapon("Stinger", 40);

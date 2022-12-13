@@ -17,11 +17,6 @@ public class GUIParser implements InputParser{
     }
 
     @Override
-    public void startGame() {
-
-    }
-
-    @Override
     public void showHeros(List<Combatant> heros) {
 
     }
@@ -36,7 +31,7 @@ public class GUIParser implements InputParser{
     public void win() {
 
     }
-    public void getRewards(){
+    public void getRewards(Combatant combatant){
 
     }
     @Override
