@@ -1,5 +1,6 @@
 package com.isep.rpg;
 
+import com.isep.utils.ConsoleParser;
 import com.isep.utils.InputParser;
 
 import java.util.ArrayList;
@@ -11,7 +12,6 @@ public class Game {
 
         this.inputParser = inputParser;
 
-        // Il faut normalement 5 héros de types différents...
         heros = new ArrayList<>();
         //
         Hero ronal = new Warrior("Ronal");
@@ -85,7 +85,7 @@ public class Game {
                 break;
             }
             if (enemies.size() == 0) {
-                displayMessage("BRAVO, les héros ont gagné, le monde est sauvé !!!");
+                inputParser.win();
                 break;
             }
 
@@ -101,22 +101,12 @@ public class Game {
     private final List<Combatant> enemies;
 
 
-    // Méthodes d'affichage
-    // (STATIQUES pour pouvoir les appeler depuis n'importe où dans le programme)
-    //
-    // => pourraient éventuellement être déplacées dans le package
-    //    "com.isep.utils", en s'inspirant de "InputParser" (méthodes de saisie)
 
-    public static void displayStatus(List<Combatant> h, List<Combatant> e) {
+
+    public void displayStatus(List<Combatant> h, List<Combatant> e) {
         System.out.println("#########################");
-        for (Combatant c: h) {
-            System.out.print(c.getName() + "(" + c.getHealthPoint() + ") ");
-        }
-        System.out.println();
-        for (Combatant c: e) {
-            System.out.print(c.getName() + "(" + c.getHealthPoint() + ") ");
-        }
-        System.out.println();
+        inputParser.showHeros(heros);
+        inputParser.showEnemies(enemies);
     }
 
     public static void displayMessage(String message) {
