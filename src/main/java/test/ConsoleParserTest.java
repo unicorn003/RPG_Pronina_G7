@@ -21,5 +21,6 @@ class ConsoleParserTest {
     void getRewardsWarrior(){
         cP.getRewards(sam);
         assertEquals(sam.getAttackPoint(), 48);
+
     }
 }
